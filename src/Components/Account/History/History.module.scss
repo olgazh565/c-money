@@ -1,0 +1,119 @@
+.history {
+  max-width: 580px;
+  grid-area: history;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.title {
+  font-family: Comfortaa;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.container {
+  max-height: 487px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    max-height: 300px;
+    max-width: 100%;
+  }
+}
+
+.table {
+  background-color: var(--header);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  min-height: 330px;
+
+  @media (max-width: 1120px) {
+    max-width: 100%;
+    padding: 5px;
+    padding-left: 20px;
+  }
+}
+
+.thead {
+  color: var(--text);
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.th {
+  border-bottom: 1px solid var(--bgcolor);
+  padding: 10px 0 16px 20px;
+  text-align: left;
+  
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &::nth-child(2) {
+    border-left: 1px solid var(--bgcolor);
+    border-right: 1px solid var(--bgcolor);
+  }
+
+  &:last-child {
+    padding-left: 12px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    max-width: 30%;
+    padding: 5px;
+  }
+}
+
+.tbody {
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
+
+.trow {
+  vertical-align: top;
+}
+
+.td {
+  padding: 12px 0;
+
+  @media (max-width: 768px) {
+    max-width: 30%;
+    padding: 5px 0;
+  }
+}
+
+.tdMiddle {
+  border-left: 1px solid var(--bgcolor);
+  border-right: 1px solid var(--bgcolor);
+  padding-left: 20px;
+}
+
+.tdDate {
+  padding-left: 12px;
+}
+
+.sumMinus {
+  color: #B865D6;
+}

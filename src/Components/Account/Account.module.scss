@@ -1,0 +1,69 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;  
+  justify-content: space-between;
+  grid-template-areas: 
+  'header header'
+  'dynamic history'
+  'statistic history'
+  'transaction transaction';
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1120px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'header'
+    'history'
+    'dynamic'
+    'statistic'
+    'transaction';
+    }
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  grid-area: header;
+
+  @media (max-width: 1120px) {
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+}
+
+.title {
+  font-family: Comfortaa;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.text {
+  font-family: Comfortaa;
+  font-size: 20px;
+
+  @media (max-width: 1120px) {
+    font-size: 14px;
+  }
+}
+
+.button {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 12px 30px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}

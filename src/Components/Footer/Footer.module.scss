@@ -1,0 +1,32 @@
+footer {
+  margin-top: auto;
+  padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.logo {
+  @media (max-width: 768px) {
+    max-width: 100px;
+  }
+}
+
+.copy {
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+

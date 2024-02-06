@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.title {
+  font-family: Comfortaa;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.button {
+  margin-bottom: 70px;
+  padding: 12px 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.currencies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.currenciesTitle {
+  font-family: Comfortaa;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sortTitle {
+  color: var(--text);
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.selectWrapper {
+  position: relative;
+  max-width: 150px;
+}
+
+.select {
+  background-color: initial;
+  border: none;
+  color: #fff;
+  outline: transparent;
+  appearance: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+.preloaderContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  height: 90vh;
+  width: 100%;
+}

@@ -1,0 +1,101 @@
+.statistic {
+  margin-bottom: 50px;
+  grid-area: statistic;
+}
+
+.title {
+  font-family: Comfortaa;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.dognutWrapper {
+  display: flex;
+}
+
+.heading {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #C6B6D7;
+}
+
+.text {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.doughnutLabel {
+  text-align: left;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 65px 43px 65px 10px;
+  cursor: pointer;
+}
+
+.doughnutLabel>p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.doughnutElement {
+  max-width: 220px;
+}
+
+.doughnutLegend {
+  display: flex;
+  padding-left: 43px;
+  padding-top: 65px;
+}
+
+.doughnutLegend>div {
+  margin-left: 20px;
+}
+
+.doughnutLegend>div>p {
+  padding-bottom: 20px;
+}
+
+
+.doughnutLegendUp,
+.doughnutLegendDown {
+  position: relative;
+}
+
+.doughnutLegendUp::before,
+.doughnutLegendDown::before {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.doughnutLegendUp::before {
+  background-color: #4b00ca;
+}
+
+.doughnutLegendDown::before {
+  background-color: #b865d6;
+}
+
+.active {
+  color: #B865D6;
+}

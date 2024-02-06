@@ -1,0 +1,64 @@
+.ratesWrapper {
+  background: var(--header);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 15px 60px 25px 20px;
+  min-height: 350px;
+  height: fit-content;
+
+  @media (max-width: 1130px) {
+    margin-bottom: 30px;
+  }
+}
+
+.ratesTitle {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.tr {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tdFirst {
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+.tdSecond {
+  border-bottom: 1px solid var(--bgcolor);
+  width: 100%;
+}
+
+.tdThird {
+  align-items: center;
+  display: flex;
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 5px;
+  justify-content: flex-end;
+  line-height: 1;
+  margin-top: 20px;
+}
+
