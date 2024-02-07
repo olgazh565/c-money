@@ -25,6 +25,8 @@ export const Account = () => {
   const {year} = useSelector(state => state.year);
   const transactions = transferData?.transactions?.length ?
     transferData.transactions : account.transactions;
+  const balance = transferData?.balance ?
+    transferData.balance : account.balance;
 
   useEffect(() => {
     if (id) {
@@ -53,7 +55,7 @@ export const Account = () => {
               <div>
                 <h2 className={style.title}>{id}</h2>
                 <p className={style.text}>
-                  Баланс: {account.balance.toLocaleString('ru')} ₽
+                  Баланс: {balance.toLocaleString('ru')} ₽
                 </p>
               </div>
               <Button
