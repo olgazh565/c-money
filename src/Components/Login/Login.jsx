@@ -84,6 +84,7 @@ export const Login = () => {
                 <input
                   className={style.input}
                   name='login'
+                  id='login'
                   type='text'
                   disabled={disabled}
                   aria-invalid={!!errors.login}
@@ -102,6 +103,7 @@ export const Login = () => {
                 <input
                   className={style.input}
                   name='password'
+                  id='password'
                   type='password'
                   disabled={disabled}
                   aria-invalid={!!errors.password}
