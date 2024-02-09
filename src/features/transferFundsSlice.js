@@ -43,7 +43,6 @@ const transferFundsSlice = createSlice({
       .addCase(transferFunds.pending, (state) => {
         state.status = 'loading';
         state.error = '';
-        state.transferData = {};
       })
       .addCase(transferFunds.fulfilled, (state, action) => {
         state.status = 'success';

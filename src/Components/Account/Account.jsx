@@ -73,7 +73,7 @@ export const Account = () => {
                 <Dynamic
                   history={transactions}
                   id={id}
-                  balance={account.balance}
+                  balance={balance}
                 />
                 <History
                   status={status}
@@ -83,7 +83,7 @@ export const Account = () => {
                 <Statistic
                   history={transactions}
                   id={id}
-                  balance={account.balance}
+                  balance={balance}
                 />
                 <Transaction id={id} />
               </>
