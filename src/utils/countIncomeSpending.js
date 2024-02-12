@@ -12,11 +12,11 @@ export const countIncomeSpendingPerYear = (val, arr, year) => {
     .reduce((acc, item) => acc + item.spending, 0);
 
   if (val === 'year') {
-    return [income, spending];
+    return [Math.round(income), Math.round(spending)];
   } else if (val === 'month') {
-    return [income / months, spending / months];
+    return [Math.round(income / months), Math.round(spending / months)];
   } else if (val === 'week') {
-    return [income / weeks, spending / weeks];
+    return [Math.round(income / weeks), Math.round(spending / weeks)];
   }
 };
 

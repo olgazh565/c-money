@@ -51,7 +51,7 @@ const tokenSlice = createSlice({
       })
       .addCase(fetchToken.rejected, (state, action) => {
         state.status = 'error';
-        state.error = action.payload;
+        state.error = action.error.message;
       });
   }
 });

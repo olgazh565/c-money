@@ -109,7 +109,7 @@ export const AccountsList = () => {
 
             {status === 'loading' && (
               <div className={style.preloaderContainer}>
-                <Preloader size={80} />
+                <Preloader size={100} />
               </div>
             )}
 

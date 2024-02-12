@@ -38,7 +38,7 @@ const accountsListSlice = createSlice({
       .addCase(fetchAccountsList.fulfilled, (state, action) => {
         state.status = 'success';
         state.accountsList = action.payload.payload;
-        state.error = action.payload.error;
+        state.error = action.payload.error.message;
       })
       .addCase(fetchAccountsList.rejected, (state, action) => {
         state.status = 'error';

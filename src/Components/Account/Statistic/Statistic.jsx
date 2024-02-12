@@ -113,12 +113,12 @@ export const Statistic = ({history, id, balance}) => {
           </div>
 
           <div className={style.text}>
-            <p>{balance.toLocaleString('ru')} ₽</p>
+            <p>{Math.round(income + spending).toLocaleString('ru')} ₽</p>
             <p>
-              {Number(income?.toFixed(2)).toLocaleString('ru')} ₽
+              {Math.round(income).toLocaleString('ru')} ₽
             </p>
             <p>
-              {Number(spending?.toFixed(2)).toLocaleString('ru')} ₽
+              {Math.round(spending).toLocaleString('ru')} ₽
             </p>
           </div>
         </div>
